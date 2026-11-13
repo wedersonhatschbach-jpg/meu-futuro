@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Futuro</title>
+  <!-- Fonte moderna do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Link para o arquivo CSS separado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barra de progresso de leitura no topo -->
+  <div id="progress-bar"></div>
+
+  <!-- Fundo animado com partículas azuis via JavaScript -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Cabeçalho e Navegação -->
+  <header class="navbar">
+    <div class="logo">Meu<span>Futuro</span></div>
+    <nav>
+      <a href="#ano-1">1 Ano (2027)</a>
+      <a href="#anos-5">5 Anos</a>
+      <a href="#anos-10">10 Anos</a>
+    </nav>
+  </header>
+
+  <!-- Seção Principal (Hero) -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="tag">Linha do Tempo dos Meus Sonhos</span>
+      <h1>Meu Futuro</h1>
+      <p class="typing-container">
+        <span id="typing-text"></span><span class="cursor">|</span>
+      </p>
+      <a href="#ano-1" class="btn-primary">Explorar Minha Jornada ↓</a>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal com as 3 Seções -->
+  <main class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <!-- SEÇÃO 1: DAQUI A 1 ANO -->
+    <section id="ano-1" class="timeline-section reveal">
+      <div class="timeline-dot">1</div>
+      <div class="card tilt-card">
+        <div class="card-header">
+          <span class="badge">2027 • Daqui a 1 Ano</span>
+          <div class="icon-box">🎓</div>
+        </div>
+        <h2>Conclusão do Ensino Médio e Faculdade</h2>
+        <p>
+          Em <strong>2027</strong>, estarei vivendo um dos momentos mais marcantes da minha vida: 
+          a finalização do <strong>Ensino Médio</strong>. Será um ano de formatura, superação e 
+          novas responsabilidades. Logo após concluir essa etapa, darei um passo fundamental 
+          para o meu crescimento e entrarei em uma <strong>faculdade</strong>. Ainda não sei exatamente 
+          qual curso ou instituição vou escolher, mas tenho certeza de que será o começo da 
+          construção do meu futuro profissional.
+        </p>
+        <div class="goals-tags">
+          <span>Formar no Ensino Médio</span>
+          <span>Ingressar na Faculdade</span>
+          <span>Novas Descobertas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: DAQUI A 5 ANOS -->
+    <section id="anos-5" class="timeline-section reveal">
+      <div class="timeline-dot">5</div>
+      <div class="card tilt-card">
+        <div class="card-header">
+          <span class="badge">2031 • Daqui a 5 Anos</span>
+          <div class="icon-box">🚗</div>
+        </div>
+        <h2>Independência e Meu Primeiro Carro</h2>
+        <p>
+          Daqui a cinco anos, já terei avançado bastante nos meus estudos e na minha caminhada 
+          profissional. Uma das minhas grandes metas realizadas nesse período será conquistar o 
+          <strong>meu próprio carro</strong>. Esse objetivo representa muito mais do que um meio de 
+          transporte: será o símbolo da minha independência, da minha liberdade para ir e vir e 
+          o resultado de todo o meu esforço e dedicação.
+        </p>
+        <div class="goals-tags">
+          <span>Conquistar Meu Carro</span>
+          <span>Independência</span>
+          <span>Evolução Profissional</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: DAQUI A 10 ANOS -->
+    <section id="anos-10" class="timeline-section reveal">
+      <div class="timeline-dot">10</div>
+      <div class="card tilt-card">
+        <div class="card-header">
+          <span class="badge">2036 • Daqui a 10 Anos</span>
+          <div class="icon-box">🏡</div>
+        </div>
+        <h2>Carro, Casa Própria e Família</h2>
+        <p>
+          Em dez anos, visualizo uma vida plena, estável e cheia de realizações. Além de ter o 
+          <strong>meu carro</strong>, terei conquistado a <strong>minha casa própria</strong>, um espaço 
+          só meu para chamar de lar. E o mais importante de tudo: terei formado a <strong>minha família</strong>, 
+          construindo uma história de amor, união e felicidade ao lado das pessoas que mais importam para mim.
+        </p>
+        <div class="goals-tags">
+          <span>Carro na Garagem</span>
+          <span>Casa Própria</span>
+          <span>Minha Família</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botão Interativo Final -->
+    <div class="cta-box reveal">
+      <button id="celebrate-btn" class="btn-glow">✨ Realizar Esses Sonhos</button>
+      <p id="motivational-msg" class="hidden-msg">
+        O futuro pertence àqueles que acreditam na beleza de seus sonhos. Vamos conquistar tudo isso! 🚀💙
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Projeto <strong>Meu Futuro</strong> • Feito com HTML, CSS e JavaScript</p>
+  </footer>
+
+  <!-- Link para o arquivo JavaScript separado -->
+  <script src="script.js"></script>
+</body>
+</html>
